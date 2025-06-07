@@ -1,614 +1,605 @@
 /* Geral */
 
+@font-face {
+  font-family: "Irish Grover";
+  src: url("./fonts/buExpoi6YtLz2QW7LA4flVgv__RP.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    scroll-behavior: smooth;
-    scroll-padding-top: 130px;
-    overflow-x: hidden;
-    font-size: 62.5%;
-    width: 100%;
-    background-color: white;
-    color: black;
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  width: 100%;
+  background-color: white;
+  color: black;
 }
 
 /*Header*/
 
 header {
-    background-image: url(./img/madeira.jpg);
-    width: 100%;
-    height: 15vh;
-    position: fixed;
+  background-image: url(./img/madeira.jpg);
+  width: 100%;
+  height: 15vh;
+  position: fixed;
 }
 
 .nave {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(55, 35, 15, 0.9);
-    width: 100%;
-    height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(55, 35, 15, 0.9);
+  width: 100%;
+  height: 15vh;
 }
 
 .nave img {
-    width: 120px;
+  width: 120px;
 }
 
 .logo_link {
-    margin-left: 5%;
+  margin-left: 5%;
 }
 
 nav ul {
-    color: #fff;
-    list-style: none;
-    display: flex;
-    margin-right: 3vw;
-    margin-top: 15px;
+  color: #fff;
+  list-style: none;
+  display: flex;
+  margin-right: 3vw;
+  margin-top: 15px;
 }
 
 nav a {
-    margin-right: 30px;
-    font-size: 2.2rem;
-    font-family: "Irish Grover", system-ui;
-    text-decoration: none;
-    color: #fff;
+  margin-right: 30px;
+  font-size: 2.2rem;
+  font-family: "Irish Grover", cursive;
+  text-decoration: none;
+  color: #fff;
 }
 
 nav a:hover {
-    color: #8d5a27;
+  color: #8d5a27;
 }
 
 .reserva_but {
-    background-color: #ff8d12;
-    color: black;
-    font-weight: bold;
-    padding: 7px;
-    border-radius: 5px;
+  background-color: #ff8d12;
+  color: black;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .reserva_but:hover {
-    background-color: #ffbc2a;
-    color: #000;
+  background-color: #ffbc2a;
+  color: #000;
 }
 
 /*Banner*/
 
 .hero {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 10vh;
-    background: url(./img/banner.png) center/cover no-repeat;
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 10vh;
+  background: url(./img/banner.png) center/cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 9vw, 12rem);
-    font-family: "Irish Grover", system-ui;
-    color: white;
-    margin-bottom: 50px;
+  font-size: clamp(2rem, 9vw, 12rem);
+  font-family: "Irish Grover", cursive;
+  color: white;
+  margin-bottom: 50px;
 }
 
 .but_cont {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .botoes {
-    padding: 10px 20px;
-    font-size: clamp(1.5rem, 5vw, 4rem);
-    background-color: rgba(87, 84, 84, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-    text-decoration: none;
+  padding: 10px 20px;
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  background-color: rgba(87, 84, 84, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-
 .botoes:hover {
-    background-color: #8d5a27;
-    transition: background-color 0.3s ease;
+  background-color: #8d5a27;
+  transition: background-color 0.3s ease;
 }
 
 /*Seção sobre*/
 
 .sobre-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    background-color: #cc9b67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #cc9b67;
 }
 
 .sobre-img {
-    width: 35vw;
-    height: auto;
-    border-radius: 12px;
-    padding-right: 5rem;
-
+  width: 35vw;
+  height: auto;
+  border-radius: 12px;
+  padding-right: 5rem;
 }
 
 .sobre-texto h1 {
-    font-size: clamp(3.5rem, 5vw, 6rem);
-    text-align: center;
-    color: #000;
-    margin-bottom: 15px;
-    font-family: "Irish Grover", system-ui;
+  font-size: clamp(3.5rem, 5vw, 6rem);
+  text-align: center;
+  color: #000;
+  margin-bottom: 15px;
+  font-family: "Irish Grover", system-ui;
 }
 
 .sobre-texto p {
-    font-size: clamp(1.7rem, 3vw, 3rem);
-    line-height: 1.6;
-    max-width: 40vw;
-    text-align: center;
-    color: #000;
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  line-height: 1.6;
+  max-width: 40vw;
+  text-align: center;
+  color: #000;
 }
 
 /*Seção cardápio*/
 
-
 .cardapio-container {
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background-color: #bd8d5a;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #bd8d5a;
 }
 
 .cardapio-texto {
-    margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 2vw;
-    text-align: center;
-    color: #000;
-    font-family: "Irish Grover", system-ui;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 2vw;
+  text-align: center;
+  color: #000;
+  font-family: "Irish Grover", system-ui;
 }
 
 .item-cardapio {
-    display: flex;
-    max-width: 100%;
-    width: 65vw;
-    padding-bottom: 20px;
-    margin: 20px auto 30px;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 2px solid black;
+  display: flex;
+  max-width: 100%;
+  width: 65vw;
+  padding-bottom: 20px;
+  margin: 20px auto 30px;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid black;
 }
 
 .item-cardapio img {
-    object-fit: cover;
-    width: 16.3vw;
-    border-radius: 10px;
-    height: 25.5vh;
-    border: 3px solid rgba(55, 35, 15);
+  object-fit: cover;
+  width: 16.3vw;
+  border-radius: 10px;
+  height: 25.5vh;
+  border: 3px solid rgba(55, 35, 15);
 }
 
+.cardapio-texto {
+}
 .item-card-txt {
-    width: 80%;
-    padding: 20px;
-    font-size: 2rem;
-    color: black;
+  width: 80%;
+  padding: 20px;
+  font-size: 2rem;
+  color: black;
 }
 
 .item-card-txt h3 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .item-card-txt p {
-    margin-bottom: 20px;
-    line-height: 1.5;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .preco {
-    font-weight: bold;
-    color: rgb(26, 16, 7);
+  font-weight: bold;
+  color: rgb(26, 16, 7);
 }
 
 #bolo-de-fuba {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 /*footer*/
 
 footer {
-    width: 100%;
-    min-height: 40vh;
-    background-image: url(./img/madeira.jpg);
+  width: 100%;
+  min-height: 40vh;
+  background-image: url(./img/madeira.jpg);
 }
 
 .item_cont {
-    width: 100%;
-    min-height: 40vh;
-    background-color: rgba(55, 35, 15, 0.9);
-    display: flex;
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgba(55, 35, 15, 0.9);
+  display: flex;
 
-    align-items: center;
-    padding-bottom: 20px;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .voimg {
-    width: 20rem;
+  width: 20rem;
 }
 
 .redes {
-    color: #fff;
-    display: grid;
-    min-width: 60vw;
-    justify-content: center;
-    text-align: center;
+  color: #fff;
+  display: grid;
+  min-width: 60vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.horario {
+  margin-bottom: 2rem;
+}
+
+.horario_txt {
+  font-size: clamp(3rem, 4vw, 5rem);
+  padding-bottom: 1rem;
+}
+
+.horario p {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
 .icone {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
 }
 
 .redes a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;
-    text-decoration: none;
-    background-color: #f8a751;
-    margin: 10px;
-    padding: 10px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-decoration: none;
+  background-color: #f8a751;
+  margin: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .redes a img {
-    width: 2.5rem;
-    transition: transform 0.3s ease;
+  width: 2.5rem;
+  transition: transform 0.3s ease;
 }
 
 .redes a:hover {
-    background-color: #fffdfa;
-    transform: scale(1.1);
+  background-color: #fffdfa;
+  transform: scale(1.1);
 }
 
 .redes a:hover img {
-    transform: scale(1.3);
-}
-
-
-
-.redes_txt {
-    display: none;
+  transform: scale(1.3);
 }
 
 /*Mapa e endereço*/
 
 .end {
-
-    width: 30%;
-    padding-top: 50px;
-    color: #fff;
-
+  width: 30%;
+  padding-top: 50px;
+  color: #fff;
 }
 
 .end iframe {
-    width: 30vw;
-    min-height: 25vh;
+  width: 30vw;
+  min-height: 25vh;
 }
 
 #endereco {
-    padding-top: 2rem;
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-    cursor: pointer;
-    text-align: center;
-
+  padding-top: 2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  cursor: pointer;
+  text-align: center;
 }
 
 #texto-end {
-    text-align: center;
-    font-size: 1rem;
-
+  text-align: center;
+  font-size: 1rem;
 }
 
 #popup {
-    font-size: 2rem;
-    padding: 5px;
-    background-color: green;
-    border-radius: 10px;
-    position: fixed;
-    align-items: center;
-    bottom: 35px;
-    right: 320px;
-    opacity: 0;
-    transition: 0.3s ease;
+  font-size: 2rem;
+  padding: 5px;
+  background-color: green;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 35%;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s ease;
 }
 
 #popup.mostrar {
-    opacity: 1;
-    transition: 0.3s ease;
+  opacity: 1;
+  transition: 0.3s ease;
 }
-
-
-
-
-
 
 /*copyright*/
 .copy {
-    background-color: #000;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 .copy p {
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 /*medias*/
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1e1e1e;
-        color: #ffffff;
-    }
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
 }
 
-@media (max-width:1200px) and (min-width: 625px) {
-    .item-cardapio {
-        width: 95vw;
-    }
+@media (max-width: 1200px) and (min-width: 625px) {
+  .item-cardapio {
+    width: 95vw;
+  }
 
-    .item-cardapio img {
-        width: 25rem;
-        height: 20vh;
-    }
+  .item-cardapio img {
+    width: 25rem;
+    height: 20vh;
+  }
 
-    .cardapio-texto {
-        font-size: 2rem;
-        margin: 2rem 0;
-    }
+  .cardapio-texto {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
 
-    .item-card-txt {
-        width: 55vw;
-        padding: 0;
-    }
+  .item-card-txt {
+    width: 55vw;
+    padding: 0;
+  }
 
-    .item-card-txt h3 {
-        font-size: clamp(1rem, 5vw, 3rem);
-        margin-bottom: 1rem;
-        color: black;
-    }
+  .item-card-txt h3 {
+    font-size: clamp(1rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+    color: black;
+  }
 
-    .item-card-txt p {
-        font-size: clamp(1rem, 2vw, 5rem);
-        margin-bottom: 0.5rem;
-        text-align: justify;
-        color: black;
-    }
+  .item-card-txt p {
+    font-size: clamp(1rem, 2vw, 5rem);
+    margin-bottom: 0.5rem;
+    text-align: justify;
+    color: black;
+  }
 
-    .item-card-txt span {
-        font-size: 1.6rem;
-        color: black;
-    }
-
-
-
+  .item-card-txt span {
+    font-size: 1.6rem;
+    color: black;
+  }
 }
 
 @media (max-width: 700px) {
-    nav a {
-        font-size: 1.87rem;
-    }
+  nav a {
+    font-size: 1.87rem;
+  }
 }
 
 /*responsividade_mobile*/
 
 @media (max-width: 625px) {
+  html {
+    scroll-padding-top: 0px;
+  }
 
-    html {
-        scroll-padding-top: 0px;
-    }
+  header {
+    height: 10vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
 
-    header {
-        height: 10vh;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
+  .nave {
+    height: 10vh;
+  }
 
-    .nave {
-        height: 10vh;
-    }
+  .nave img {
+    width: 70px;
+  }
 
-    .nave img {
-        width: 70px;
-    }
+  .logo_link,
+  .nave img {
+    margin-left: 20px;
+  }
 
-    .logo_link,
-    .nave img {
-        margin-left: 20px;
-    }
+  nav a {
+    display: none;
+    padding-inline: 10px;
+    font-size: 1.7rem;
+  }
 
-    nav a {
-        display: none;
-        padding-inline: 10px;
-        font-size: 1.7rem;
-    }
+  .reserva_but {
+    display: flex;
+  }
 
-    .reserva_but {
-        display: flex;
-    }
+  .prop {
+    min-height: 100vh;
+  }
 
-    .prop {
+  .sobre-container {
+    width: auto;
+    display: block;
+    padding: 3rem;
+    text-align: center;
+  }
 
-        min-height: 100vh;
-    }
+  .sobre-img {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
 
-    .sobre-container {
-        width: auto;
-        display: block;
-        padding: 3rem;
-        text-align: center;
-    }
+  .sobre-texto,
+  .sobre-texto p {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  }
 
-    .sobre-img {
-        width: 90%;
-        padding: 0;
-        margin-bottom: 2rem;
-    }
+  .item-cardapio {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+  }
 
-    .sobre-texto,
-    .sobre-texto p {
-        margin: 0;
-        max-width: 100%;
-        text-align: center;
-    }
+  .item-cardapio img {
+    width: 35vw;
+    height: 13rem;
+  }
 
+  .cardapio-texto {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
 
-    .item-cardapio {
-        display: flex;
-        width: 95vw;
-        flex-direction: row;
-        align-items: center;
-        margin: 20px auto;
-        gap: 10px;
-    }
+  .item-card-txt {
+    width: 55vw;
+    min-height: 1vh;
+    padding: 0;
+  }
 
+  .item-card-txt h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 
-    .item-cardapio img {
-        width: 35vw;
-        height: 13rem;
-    }
+  .item-card-txt p {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
 
+  .item-card-txt span {
+    font-size: 1.6rem;
+    float: right;
+  }
 
-    .cardapio-texto {
-        font-size: 2rem;
-        margin: 2rem 0;
-    }
+  .voimg {
+    display: none;
+  }
 
-    .item-card-txt {
-        width: 55vw;
-        min-height: 1vh;
-        padding: 0;
-    }
+  .item_cont {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
 
-    .item-card-txt h3 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
+  .redes {
+    margin: 20px 0;
+  }
 
-    .item-card-txt p {
-        font-size: 1.4rem;
-        margin-bottom: 0.5rem;
-        text-align: justify;
-    }
+  .redes img {
+    width: 7vw;
+  }
 
-    .item-card-txt span {
-        font-size: 1.6rem;
-        float: right;
-    }
+  .redes h2 {
+    font-size: 8vw;
+    margin-bottom: 20px;
+  }
 
-    .voimg {
-        display: none;
-    }
+  .redes span {
+    display: none;
+  }
 
-    .item_cont {
-        display: grid;
-        text-align: center;
-        justify-content: center;
-    }
+  .redes div {
+    display: flex;
+    justify-content: center;
+  }
 
+  .end {
+    padding: 0;
+    width: 100%;
+  }
 
+  .end iframe {
+    width: auto;
+    height: auto;
+  }
 
-    .redes {
-        margin: 20px 0;
-    }
-
-    .redes img {
-        width: 7vw;
-    }
-
-    .redes h2 {
-        font-size: 8vw;
-        margin-bottom: 20px;
-    }
-
-    .redes span {
-        display: none;
-    }
-
-    .redes div {
-        display: flex;
-        justify-content: center;
-    }
-
-    .redes_txt {
-        display: flex;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    .end {
-        padding: 0;
-        width: 100%;
-    }
-
-    .end iframe {
-        width: auto;
-        height: auto;
-    }
-
-    #endereco {
-        font-size: 1.3rem;
-    }
-
+  #endereco {
+    font-size: 1.5rem;
+    padding-inline: 1.2rem;
+  }
 }
 
 @media (max-width: 400px) {
-    .item-cardapio {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 95vw;
-        margin: 10px auto;
-        gap: 10px;
-        padding: 10px;
-    }
+  .item-cardapio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 95vw;
+    margin: 10px auto;
+    gap: 10px;
+    padding: 10px;
+  }
 
-    .item-cardapio img {
-        width: 40vw;
-        height: auto;
-        object-fit: cover;
-    }
+  .item-cardapio img {
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+  }
 
-    .item-card-txt {
-        width: 55vw;
-        padding: 0;
-    }
+  .item-card-txt {
+    width: 55vw;
+    padding: 0;
+  }
 
-    .item-card-txt h3 {
-        font-size: 1.3rem;
-        margin-bottom: 5px;
-    }
+  .item-card-txt h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
 
-    .item-card-txt p {
-        font-size: 1rem;
-        margin-bottom: 5px;
-    }
+  .item-card-txt p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
 
-    .item-card-txt span {
-        font-size: 1.1rem;
-    }
+  .item-card-txt span {
+    font-size: 1.1rem;
+  }
 }
