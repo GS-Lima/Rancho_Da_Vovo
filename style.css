@@ -38,7 +38,7 @@ header {
   position: fixed;
 }
 
-.nave {
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,8 +47,8 @@ header {
   height: 15vh;
 }
 
-.nave img {
-  width: 120px;
+.header-container img {
+  width: 105px;
 }
 
 .logo_link {
@@ -56,23 +56,21 @@ header {
 }
 
 nav ul {
-  color: #fff;
   list-style: none;
   display: flex;
-  margin-right: 3vw;
-  margin-top: 15px;
 }
 
 nav a {
   margin-right: 30px;
-  font-size: 2.2rem;
+  font-size: clamp(1.87rem, 2vw, 2.3rem);
   font-family: "Irish Grover", cursive;
   text-decoration: none;
   color: #fff;
 }
 
 nav a:hover {
-  color: #8d5a27;
+  color: #eb9744;
+  transition: color 0.3s ease;
 }
 
 .reserva_but {
@@ -84,8 +82,9 @@ nav a:hover {
 }
 
 .reserva_but:hover {
-  background-color: #ffbc2a;
+  background-color: #ff8d12d8;
   color: #000;
+  transition: background-color 0.3s ease;
 }
 
 /*Banner*/
@@ -108,25 +107,21 @@ nav a:hover {
   margin-bottom: 50px;
 }
 
-.but_cont {
+.bt_container {
   display: flex;
-  text-align: center;
   justify-content: center;
-  gap: 30px;
 }
 
-.botoes {
+.bt-main {
   padding: 10px 20px;
   font-size: clamp(1.5rem, 5vw, 4rem);
   background-color: rgba(87, 84, 84, 0.5);
   color: #fff;
-  border: none;
   border-radius: 9px;
-  cursor: pointer;
   text-decoration: none;
 }
 
-.botoes:hover {
+.bt-main:hover {
   background-color: #8d5a27;
   transition: background-color 0.3s ease;
 }
@@ -149,7 +144,7 @@ nav a:hover {
 }
 
 .sobre-texto h1 {
-  font-size: clamp(3.5rem, 5vw, 6rem);
+  font-size: clamp(3.5rem, 5vw, 5rem);
   text-align: center;
   color: #000;
   margin-bottom: 15px;
@@ -157,7 +152,7 @@ nav a:hover {
 }
 
 .sobre-texto p {
-  font-size: clamp(1.7rem, 3vw, 3rem);
+  font-size: clamp(1.7rem, 2vw, 2.4rem);
   line-height: 1.6;
   max-width: 40vw;
   text-align: center;
@@ -174,20 +169,35 @@ nav a:hover {
   background-color: #bd8d5a;
 }
 
+.cardapio-txt-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .cardapio-texto {
-  font-size: 2rem;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  font-size: 2vw;
+  width: 80%;
+  margin: 3rem 0 1rem;
   text-align: center;
   color: #000;
   font-family: "Irish Grover", system-ui;
 }
 
+.cardapio-texto h1 {
+  font-size: clamp(3rem, 4vw, 5rem);
+}
+
+.cardapio-texto h2 {
+  padding-top: 20px;
+  font-size: clamp(2rem, 2.7vw, 2.5rem);
+  font-weight: normal;
+}
+
 .item-cardapio {
   display: flex;
   max-width: 100%;
-  width: 65vw;
+  width: 75vw;
   padding-bottom: 20px;
   margin: 20px auto 30px;
   align-items: center;
@@ -197,34 +207,37 @@ nav a:hover {
 
 .item-cardapio img {
   object-fit: cover;
-  width: 16.3vw;
+  aspect-ratio: 4 / 3;
+  /*width: 16.3vw;*/
+  width: 35rem;
   border-radius: 10px;
-  height: 25.5vh;
+  height: 22rem;
   border: 3px solid rgba(55, 35, 15);
 }
 
-.cardapio-texto {
-}
 .item-card-txt {
   width: 80%;
   padding: 20px;
-  font-size: 2rem;
   color: black;
 }
 
-.item-card-txt h3 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.item-card-txt h1 {
+  font-size: clamp(1.7rem, 3vw, 3.5rem);
+  margin-bottom: 1rem;
 }
 
 .item-card-txt p {
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.4rem, 2vw, 2.4rem);
   line-height: 1.5;
 }
 
 .preco {
+  font-size: clamp(1.4rem, 2vw, 2.3rem);
   font-weight: bold;
+  padding-top: 2rem;
   color: rgb(26, 16, 7);
+  float: right;
 }
 
 #bolo-de-fuba {
@@ -239,12 +252,11 @@ footer {
   background-image: url(./img/madeira.jpg);
 }
 
-.item_cont {
+.item_container {
   width: 100%;
   min-height: 40vh;
   background-color: rgba(55, 35, 15, 0.9);
   display: flex;
-
   align-items: center;
   padding-bottom: 20px;
 }
@@ -321,14 +333,14 @@ footer {
 
 #endereco {
   padding-top: 2rem;
-  font-size: clamp(1.8rem, 3vw, 2.2rem);
+  font-size: clamp(1.3rem, 2vw, 2.2rem);
   cursor: pointer;
   text-align: center;
 }
 
 #texto-end {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 #popup {
@@ -374,7 +386,8 @@ footer {
 
 @media (max-width: 1200px) and (min-width: 625px) {
   .item-cardapio {
-    width: 95vw;
+    width: 80vw;
+    justify-content: center;
   }
 
   .item-cardapio img {
@@ -382,20 +395,9 @@ footer {
     height: 20vh;
   }
 
-  .cardapio-texto {
-    font-size: 2rem;
-    margin: 2rem 0;
-  }
-
   .item-card-txt {
     width: 55vw;
     padding: 0;
-  }
-
-  .item-card-txt h3 {
-    font-size: clamp(1rem, 5vw, 3rem);
-    margin-bottom: 1rem;
-    color: black;
   }
 
   .item-card-txt p {
@@ -404,62 +406,42 @@ footer {
     text-align: justify;
     color: black;
   }
-
-  .item-card-txt span {
-    font-size: 1.6rem;
-    color: black;
-  }
-}
-
-@media (max-width: 700px) {
-  nav a {
-    font-size: 1.87rem;
-  }
 }
 
 /*responsividade_mobile*/
 
 @media (max-width: 625px) {
   html {
-    scroll-padding-top: 0px;
+    scroll-padding-top: 95px;
   }
 
   header {
-    height: 10vh;
+    height: 12vh;
     display: flex;
     text-align: center;
     justify-content: center;
   }
 
-  .nave {
-    height: 10vh;
+  .header-container {
+    height: 12vh;
   }
 
-  .nave img {
-    width: 70px;
-  }
-
-  .logo_link,
-  .nave img {
+  .header-container img {
+    width: 85px;
     margin-left: 20px;
   }
 
   nav a {
     display: none;
-    padding-inline: 10px;
-    font-size: 1.7rem;
   }
 
   .reserva_but {
     display: flex;
   }
 
-  .prop {
-    min-height: 100vh;
-  }
+  /*sobre - 625px*/
 
   .sobre-container {
-    width: auto;
     display: block;
     padding: 3rem;
     text-align: center;
@@ -478,6 +460,8 @@ footer {
     text-align: center;
   }
 
+  /*card - 625px*/
+
   .item-cardapio {
     display: flex;
     width: 95vw;
@@ -492,38 +476,23 @@ footer {
     height: 13rem;
   }
 
-  .cardapio-texto {
-    font-size: 2rem;
-    margin: 2rem 0;
-  }
-
   .item-card-txt {
     width: 55vw;
     min-height: 1vh;
     padding: 0;
   }
 
-  .item-card-txt h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+  .preco {
+    padding-top: 0rem;
   }
 
-  .item-card-txt p {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    text-align: justify;
-  }
-
-  .item-card-txt span {
-    font-size: 1.6rem;
-    float: right;
-  }
+  /*footer - 625px*/
 
   .voimg {
     display: none;
   }
 
-  .item_cont {
+  .item_container {
     display: grid;
     text-align: center;
     justify-content: center;
@@ -537,20 +506,6 @@ footer {
     width: 7vw;
   }
 
-  .redes h2 {
-    font-size: 8vw;
-    margin-bottom: 20px;
-  }
-
-  .redes span {
-    display: none;
-  }
-
-  .redes div {
-    display: flex;
-    justify-content: center;
-  }
-
   .end {
     padding: 0;
     width: 100%;
@@ -559,11 +514,6 @@ footer {
   .end iframe {
     width: auto;
     height: auto;
-  }
-
-  #endereco {
-    font-size: 1.5rem;
-    padding-inline: 1.2rem;
   }
 }
 
