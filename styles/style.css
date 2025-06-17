@@ -21,7 +21,7 @@
 html,
 body {
   scroll-behavior: smooth;
-  scroll-padding-top: 130px;
+  scroll-padding-top: 100px;
   overflow-x: hidden;
   font-size: 62.5%;
   width: 100%;
@@ -63,7 +63,7 @@ nav ul {
 
 nav a {
   margin-right: 30px;
-  font-size: clamp(1.87rem, 2vw, 2.3rem);
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
   font-family: "Irish Grover", cursive;
   text-decoration: none;
   color: #fff;
