@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="/img/logo1-semfundo.png"
-      type="image/x-icon"
-    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/mediasquery.css">
+    <link rel="shortcut icon" href="./img/logo1-semfundo.png" type="image/x-icon" />
+    <script src="./scripts/script.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Rancho da Vovó</title>
   </head>
@@ -17,14 +15,21 @@
     <header>
       <div class="header-container">
         <a href="#" class="logo_link">
-          <img src="./img/logo1-semfundo.png" alt="logo_site"/>
+          <img src="./img/logo1-semfundo.png" alt="logo_site" />
         </a>
         <nav>
           <ul>
-            <li><a href="#title">Inicio</a></li>
+            <li><a href="#title">Início</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#cardapio">Cardápio</a></li>
-            <li><a href="https://wa.me/5511937092897?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Rancho%20da%20Vov%C3%B3.%20Poderia%20me%20ajudar?" target="_blank" class="reserva_but">Faça sua reserva</a></li>
+            <li>
+              <a
+                href="https://wa.me/5511937092897?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20uma%20reserva%20no%20Rancho%20da%20Vov%C3%B3.%20Poderia%20me%20ajudar?"
+                target="_blank"
+                class="reserva_but"
+                >Faça sua reserva</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -32,7 +37,7 @@
     <section class="hero">
       <div>
         <h1>
-          Sabor de comida feita <br>
+          Sabor de comida feita <br />
           com amor de vó!
         </h1>
         <div class="bt_container">
@@ -47,10 +52,9 @@
       <div class="sobre-texto">
         <h1>Sobre o Rancho</h1>
         <p>
-          O Rancho da Vovó nasceu do desejo de resgatar os sabores da roça e
-          proporcionar uma experiência acolhedora, como aquelas tardes na casa
-          da avó. Cada detalhe do nosso espaço foi pensado com carinho para que
-          você se sinta em casa.
+          O Rancho da Vovó nasceu do desejo de resgatar os sabores da roça e proporcionar uma experiência acolhedora,
+          como aquelas tardes na casa da avó. Cada detalhe do nosso espaço foi pensado com carinho para que você se
+          sinta em casa.
         </p>
       </div>
     </article>
@@ -59,7 +63,7 @@
       <div class="cardapio-txt-container">
         <div class="cardapio-texto">
           <h1>Cardápio</h1>
-          <h2>Explore nossas delicias preparadas com receitas de familia</h2>
+          <h2>Explore nossas delícias preparadas com receitas de família</h2>
         </div>
       </div>
       <div class="item-cardapio" id="feijao-tropeiro">
@@ -67,9 +71,8 @@
         <div class="item-card-txt">
           <h1>Feijão Tropeiro da Serra</h1>
           <p>
-            Feijão com farinha de mandioca, torresmo crocante, linguiça
-            artesanal e couve refogada. Um clássico mineiro feito com sabor e
-            história.
+            Feijão com farinha de mandioca, torresmo crocante, linguiça artesanal e couve refogada. Um clássico mineiro
+            feito com sabor e história.
           </p>
           <span class="preco">R$ 28,90</span>
         </div>
@@ -80,8 +83,8 @@
         <div class="item-card-txt">
           <h1>Carne de Panela da Vó Nena</h1>
           <p>
-            Cozida lentamente no fogão a lenha, essa carne desmancha na boca.
-            Acompanhada de batatas douradas e arroz branco soltinho.
+            Cozida lentamente no fogão a lenha, essa carne desmancha na boca. Acompanhada de batatas douradas e arroz
+            branco soltinho.
           </p>
           <span class="preco">R$ 34,90</span>
         </div>
@@ -92,23 +95,20 @@
         <div class="item-card-txt">
           <h1>Pão de Queijo Recheado</h1>
           <p>
-            Nosso tradicional pão de queijo com um toque especial: recheado com
-            queijo meia cura derretido. Perfeito para qualquer hora do dia.
+            Nosso tradicional pão de queijo com um toque especial: recheado com queijo meia cura derretido. Perfeito
+            para qualquer hora do dia.
           </p>
           <span class="preco">R$ 8,00 (unidade)</span>
         </div>
       </div>
 
       <div class="item-cardapio" id="frango-caipira">
-        <img
-          src="./img/pratos/frango.jpg"
-          alt="Franguinho Caipira com Quiabo"
-        />
+        <img src="./img/pratos/frango.jpg" alt="Franguinho Caipira com Quiabo" />
         <div class="item-card-txt">
           <h1>Franguinho Caipira com Quiabo</h1>
           <p>
-            Receita do interior, feita com frango caipira ao molho bem temperado
-            e quiabo fresquinho. Acompanhado de polenta cremosa.
+            Receita do interior, feita com frango caipira ao molho bem temperado e quiabo fresquinho. Acompanhado de
+            polenta cremosa.
           </p>
           <span class="preco">R$ 36,90</span>
         </div>
@@ -118,10 +118,7 @@
         <img src="./img/pratos/canjica.jpg" alt="Canjiquinha com Costelinha" />
         <div class="item-card-txt">
           <h1>Canjiquinha com Costelinha</h1>
-          <p>
-            Milho triturado cozido com costelinha suína defumada. Um prato
-            simples e cheio de alma mineira.
-          </p>
+          <p>Milho triturado cozido com costelinha suína defumada. Um prato simples e cheio de alma mineira.</p>
           <span class="preco">R$ 29,90</span>
         </div>
       </div>
@@ -130,10 +127,7 @@
         <img src="./img/pratos/salada.jpg" alt="Salada da Horta da Vovó" />
         <div class="item-card-txt">
           <h1>Salada da Horta da Vovó</h1>
-          <p>
-            Folhas frescas colhidas no dia, com tomate cereja, cenoura ralada e
-            molho de ervas caseiro.
-          </p>
+          <p>Folhas frescas colhidas no dia, com tomate cereja, cenoura ralada e molho de ervas caseiro.</p>
           <span class="preco">R$ 18,00</span>
         </div>
       </div>
@@ -143,14 +137,30 @@
         <div class="item-card-txt">
           <h1>Bolo de Fubá com Goiabada</h1>
           <p>
-            Feito com fubá de moinho de pedra e um toque de erva-doce. Servido
-            quentinho com goiabada derretida por cima.
+            Feito com fubá de moinho de pedra e um toque de erva-doce. Servido quentinho com goiabada derretida por
+            cima.
           </p>
           <span class="preco">R$ 9,50 (fatia)</span>
         </div>
       </div>
     </section>
+    <section class="galeria-fundo">
+      <h1 class="galeria-titulo">Galeria</h1>
+      <section class="galeria-container">
+        <button id="prev-button" class="bt"><</button>
 
+        <div id="img-slide-container">
+          <img src="./img/vovolurdes.jpg" alt="" class="slider-img" />
+          <img src="./img/pratos/feijao.jpg" alt="" class="slider-img" />
+          <img src="./img/restaurante-sp.png" alt="" class="slider-img" />
+          <img src="./img/carrossel_img1.jpg" alt="" class="slider-img" />
+          <img src="./img/pratos/canjica.jpg" alt="" class="slider-img" />
+          <img src="./img/rest_fora.jpg" alt="" class="slider-img" />
+        </div>
+
+        <button id="next-button" class="bt">></button>
+      </section>
+    </section>
     <footer>
       <div class="item_container">
         <section class="redes">
@@ -166,8 +176,7 @@
             <a href="https://www.facebook.com/profile.php?id=61576813590008">
               <img src="./img/icones/icons8-facebook-50.png" alt="" id="fac" />
             </a>
-            <a
-              href="https://www.instagram.com/ranchdavovo?igsh=c21pbDR6cXY3cWx3"
+            <a href="https://www.instagram.com/ranchdavovo?igsh=c21pbDR6cXY3cWx3"
               ><img src="./img/icones/icons8-instagram-50.png" alt="" id="inst"
             /></a>
             <a href="https://wa.me/message/7YCW7IPNDCV5C1"
@@ -184,9 +193,7 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <p onclick="copiar()" id="endereco">
-            R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000
-          </p>
+          <p onclick="copiar()" id="endereco">R. Guaipá, 678 - Vila Leopoldina, São Paulo - SP, 05089-000</p>
           <p id="texto-end">(Clique para copiar)</p>
           <p id="popup">Copiado!</p>
         </section>
@@ -195,6 +202,5 @@
         <p>&copy; 2025 RanchoDaVovo</p>
       </div>
     </footer>
-    <script src="./script.js"></script>
   </body>
 </html>

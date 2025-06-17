@@ -1,0 +1,242 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1260px) and (min-width: 625px) {
+  .item-cardapio {
+    width: 80vw;
+    justify-content: center;
+  }
+
+  .item-cardapio img {
+    width: 25rem;
+    height: 20vh;
+  }
+
+  .item-card-txt {
+    width: 55vw;
+    padding: 0;
+  }
+
+  .item-card-txt p {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+    color: black;
+  }
+  #img-slide-container {
+    width: 720px;
+  }
+  
+  #prev-button {
+    margin: 0 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  #next-button {
+    margin: 0 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .slider-img {
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 843px) {
+  #img-slide-container {
+    width: 361px;
+  }
+}
+
+/*responsividade_mobile*/
+
+@media (max-width: 625px) {
+  html {
+    scroll-padding-top: 95px;
+  }
+
+  header {
+    height: 12vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header-container {
+    height: 12vh;
+  }
+
+  .header-container img {
+    width: 85px;
+    margin-left: 20px;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .reserva_but {
+    display: flex;
+  }
+
+  /*sobre - 625px*/
+
+  .sobre-container {
+    display: block;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .sobre-img {
+    width: 90%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .sobre-texto,
+  .sobre-texto p {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /*card - 625px*/
+
+  .item-cardapio {
+    display: flex;
+    width: 95vw;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+  }
+
+  .item-cardapio img {
+    width: 35vw;
+    height: 13rem;
+  }
+
+  .item-card-txt {
+    width: 55vw;
+    min-height: 1vh;
+    padding: 0;
+  }
+
+  .preco {
+    padding-top: 0rem;
+  }
+
+  /*footer - 625px*/
+
+  .voimg {
+    display: none;
+  }
+
+  .item_container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .redes {
+    margin: 20px 0;
+  }
+
+  .redes img {
+    width: 7vw;
+  }
+
+  .end {
+    padding: 0;
+    width: 100%;
+  }
+
+  .end iframe {
+    width: auto;
+    height: auto;
+  }
+
+  #img-slide-container {
+    width: 30rem;
+    height: 80%;
+  }
+
+  .slider-img {
+    width: 100%;
+    height: 70%;
+  }
+
+  #prev-button {
+    position: absolute;
+    margin-right: 31rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #next-button {
+    position: absolute;
+    margin-left: 30rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .item-cardapio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 95vw;
+    margin: 10px auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .item-cardapio img {
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .item-card-txt {
+    width: 55vw;
+    padding: 0;
+  }
+
+  .item-card-txt h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .item-card-txt p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .item-card-txt span {
+    font-size: 1.1rem;
+  }
+
+  #img-slide-container {
+    width: 25rem;
+    height: 70%;
+  }
+  #prev-button {
+    position: absolute;
+    margin-right: 25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #next-button {
+    position: absolute;
+    margin-left: 25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}

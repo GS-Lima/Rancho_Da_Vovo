@@ -1,0 +1,461 @@
+/* Geral */
+
+@font-face {
+  font-family: "Irish Grover";
+  src: url("../assets/fonts/buExpoi6YtLz2QW7LA4flVgv__RP.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+/*Header*/
+
+header {
+  background-image: url(../img/madeira.jpg);
+  width: 100%;
+  height: 15vh;
+  position: fixed;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(55, 35, 15, 0.9);
+  width: 100%;
+  height: 15vh;
+}
+
+.header-container img {
+  width: 105px;
+}
+
+.logo_link {
+  margin-left: 5%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  margin-right: 30px;
+  font-size: clamp(1.87rem, 2vw, 2.3rem);
+  font-family: "Irish Grover", cursive;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #eb9744;
+  transition: color 0.3s ease;
+}
+
+.reserva_but {
+  background-color: #ff8d12;
+  color: black;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.reserva_but:hover {
+  background-color: #ff8d12d8;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+/*Banner*/
+
+.hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 10vh;
+  background: url(../img/banner.png) center/cover no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 9vw, 12rem);
+  font-family: "Irish Grover", cursive;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.bt_container {
+  display: flex;
+  justify-content: center;
+}
+
+.bt-main {
+  padding: 10px 20px;
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  background-color: rgba(87, 84, 84, 0.5);
+  color: #fff;
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+.bt-main:hover {
+  background-color: #8d5a27;
+  transition: background-color 0.3s ease;
+}
+
+/*Seção sobre*/
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #cc9b67;
+}
+
+.sobre-img {
+  width: 35vw;
+  height: auto;
+  border-radius: 12px;
+  padding-right: 5rem;
+}
+
+.sobre-texto h1 {
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  text-align: center;
+  color: #000;
+  margin-bottom: 15px;
+  font-family: "Irish Grover", system-ui;
+}
+
+.sobre-texto p {
+  font-size: clamp(1.7rem, 2vw, 2.4rem);
+  line-height: 1.6;
+  max-width: 40vw;
+  text-align: center;
+  color: #000;
+}
+
+/*Seção cardápio*/
+
+.cardapio-container {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #bd8d5a;
+}
+
+.cardapio-txt-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.cardapio-texto {
+  width: 80%;
+  margin: 3rem 0 1rem;
+  text-align: center;
+  color: #000;
+  font-family: "Irish Grover", system-ui;
+}
+
+.cardapio-texto h1 {
+  font-size: clamp(3rem, 4vw, 5rem);
+}
+
+.cardapio-texto h2 {
+  padding-top: 20px;
+  font-size: clamp(2rem, 2.7vw, 2.5rem);
+  font-weight: normal;
+}
+
+.item-cardapio {
+  display: flex;
+  max-width: 100%;
+  width: 75vw;
+  padding-bottom: 20px;
+  margin: 20px auto 30px;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid black;
+}
+
+.item-cardapio img {
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  /*width: 16.3vw;*/
+  width: 35rem;
+  border-radius: 10px;
+  height: 22rem;
+  border: 3px solid rgba(55, 35, 15);
+}
+
+.item-card-txt {
+  width: 80%;
+  padding: 20px;
+  color: black;
+}
+
+.item-card-txt h1 {
+  font-size: clamp(1.7rem, 3vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.item-card-txt p {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.4rem, 2vw, 2.4rem);
+  line-height: 1.5;
+}
+
+.preco {
+  font-size: clamp(1.4rem, 2vw, 2.3rem);
+  font-weight: bold;
+  padding-top: 2rem;
+  color: rgb(26, 16, 7);
+  float: right;
+}
+
+#bolo-de-fuba {
+  border-bottom: none;
+}
+
+/*galeria*/
+
+.galeria-fundo {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(62, 42, 28, 0.8), rgba(0, 0, 0, 0));
+}
+
+.galeria-titulo {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Irish Grover", cursive;
+  padding-top: 3rem;
+}
+
+.galeria-container {
+  display: flex;
+  position: relative;
+  height: 45vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+  margin-bottom: 2rem;
+}
+
+#img-slide-container {
+  display: flex;
+  width: 1075px;
+  height: 100%;
+  justify-content: start;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+  scrollbar-width: none;
+  gap: 1.2rem;
+  scroll-behavior: smooth;
+}
+
+.slider-img {
+  flex-shrink: 0;
+  width: 350px;
+  height: 270px;
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+  scroll-snap-align: center;
+}
+
+.slider-img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+}
+
+#prev-button,
+#next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4a805;
+  border-radius: 50%;
+  width: 3%;
+  height: 14%;
+  font-size: clamp(2rem, 2.5vw, 5rem);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+#prev-button:hover,
+#next-button:hover {
+  transform: scale(1.2);
+  text-align: center;
+}
+
+#prev-button {
+  margin-right: 4rem;
+}
+#next-button {
+  margin-left: 4rem;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  min-height: 40vh;
+  background-image: url(../img/madeira.jpg);
+}
+
+.item_container {
+  width: 100%;
+  min-height: 40vh;
+  background-color: rgba(55, 35, 15, 0.9);
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.voimg {
+  width: 20rem;
+}
+
+.redes {
+  color: #fff;
+  display: grid;
+  min-width: 60vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.horario {
+  margin-bottom: 2rem;
+}
+
+.horario_txt {
+  font-size: clamp(3rem, 4vw, 5rem);
+  padding-bottom: 1rem;
+}
+
+.horario p {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-decoration: none;
+  background-color: #f8a751;
+  margin: 10px;
+  padding: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes a img {
+  width: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.redes a:hover {
+  background-color: #fffdfa;
+  transform: scale(1.1);
+}
+
+.redes a:hover img {
+  transform: scale(1.3);
+}
+
+/*Mapa e endereço*/
+
+.end {
+  width: 30%;
+  padding-top: 50px;
+  color: #fff;
+}
+
+.end iframe {
+  width: 30vw;
+  min-height: 25vh;
+}
+
+#endereco {
+  padding-top: 2rem;
+  font-size: clamp(1.3rem, 2vw, 2.2rem);
+  cursor: pointer;
+  text-align: center;
+}
+
+#texto-end {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#popup {
+  font-size: 2rem;
+  padding: 5px;
+  background-color: green;
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 35%;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+#popup.mostrar {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+/*copyright*/
+.copy {
+  background-color: #000;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.copy p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+
+
